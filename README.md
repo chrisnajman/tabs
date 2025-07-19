@@ -2,6 +2,10 @@
 
 A fully accessible, keyboard-navigable tab interface with responsive layout, built with semantic HTML, ARIA roles, and JavaScript.
 
+[View on GitPage](https://chrisnajman.github.io/tabs)
+
+---
+
 ## JavaScript
 
 Built with **vanilla ES6 JavaScript**, focusing on modern syntax and browser APIs, , then bundled, transpiled to ES2015, and minified for broad browser compatibility.
