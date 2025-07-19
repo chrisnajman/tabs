@@ -1,0 +1,44 @@
+.tabs {
+    max-width: 46.25rem;
+    margin-inline: auto;
+    background-color: var(--el-bg);
+    overflow: clip;
+}
+
+div[role="tablist"] {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button[role="tab"] {
+    all: unset;
+    flex-grow: 1;
+    background-color: var(--button-bg);
+    color: white;
+    padding: 0.776rem;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: clamp(1rem, 0.8995rem + 0.4673vw, 1.25rem);
+    font-weight: var(--bold);
+    text-align: center;
+    border: 0.0625rem solid var(--body-fg);
+
+    &[aria-selected="true"] {
+        background-color: white;
+        color: black;
+        pointer-events: none;
+    }
+
+    &[aria-selected="false"]:hover {
+        background-color: var(--body-bg);
+        color: var(--body-fg);
+    }
+}
+
+div[role="tabpanel"] {
+    padding: 1em;
+    border-width: 0 0.0625rem 0.0625rem 0.0625rem;
+    border-style: solid;
+    border-color: var(--body-fg);
+    background-color: var(--el-bg);
+}
