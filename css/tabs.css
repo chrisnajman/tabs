@@ -1,18 +1,21 @@
 .tabs {
-    max-width: 46.25rem;
     margin-inline: auto;
-    background-color: var(--el-bg);
-    overflow: clip;
+    max-width: 50rem;
 }
 
 div[role="tablist"] {
     display: flex;
     flex-wrap: wrap;
+    gap: 0.5rem;
+    position: relative;
+    @media screen and (width < 40.5rem) {
+        justify-content: center;
+        padding-block-end: 0.5em;
+    }
 }
 
 button[role="tab"] {
     all: unset;
-    flex-grow: 1;
     background-color: var(--button-bg);
     color: white;
     padding: 0.776rem;
@@ -21,24 +24,37 @@ button[role="tab"] {
     font-size: clamp(1rem, 0.8995rem + 0.4673vw, 1.25rem);
     font-weight: var(--bold);
     text-align: center;
-    border: 0.0625rem solid var(--body-fg);
+    border-radius: 0.5rem 0.5rem 0 0;
 
     &[aria-selected="true"] {
-        background-color: white;
-        color: black;
+        background-color: var(--el-bg);
+        box-shadow: 0.25rem 0 0.375rem rgba(0, 0, 0, 0.2);
+        color: var(--body-fg);
         pointer-events: none;
+
+        @media screen and (width < 40.5rem) {
+            box-shadow: none;
+        }
     }
 
     &[aria-selected="false"]:hover {
-        background-color: var(--body-bg);
+        background-color: var(--el-bg);
         color: var(--body-fg);
+    }
+
+    @media screen and (width < 40.5rem) {
+        border-radius: 0.5rem;
     }
 }
 
 div[role="tabpanel"] {
-    padding: 1em;
-    border-width: 0 0.0625rem 0.0625rem 0.0625rem;
-    border-style: solid;
-    border-color: var(--body-fg);
+    position: relative;
+    top: -0.25rem;
+    padding: 1.5em;
     background-color: var(--el-bg);
+
+    @media screen and (width < 40.5rem) {
+        position: static;
+        border-radius: 0.5rem;
+    }
 }
