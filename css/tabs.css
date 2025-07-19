@@ -20,8 +20,6 @@ button[role="tab"] {
     color: white;
     padding: 0.776rem;
     cursor: pointer;
-    font-family: inherit;
-    font-size: clamp(1rem, 0.8995rem + 0.4673vw, 1.25rem);
     font-weight: var(--bold);
     text-align: center;
     border-radius: 0.5rem 0.5rem 0 0;
