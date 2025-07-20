@@ -50,137 +50,187 @@
                 <div role="tablist">
                     <button id="tab-1" aria-selected="true" aria-controls="tab-panel-1" role="tab" type="button"
                         tabindex="0">
-                        Tab #1
+                        Description
                     </button>
                     <button id="tab-2" aria-selected="false" aria-controls="tab-panel-2" role="tab" type="button"
                         tabindex="-1">
-                        Tab #2
+                        JavaScript
                     </button>
                     <button id="tab-3" aria-selected="false" aria-controls="tab-panel-3" role="tab" type="button"
                         tabindex="-1">
-                        Tab #3
+                        Accessibility
                     </button>
                     <button id="tab-4" aria-selected="false" aria-controls="tab-panel-4" role="tab" type="button"
                         tabindex="-1">
-                        Tab #4
+                        Theme Toggling
                     </button>
                     <button id="tab-5" aria-selected="false" aria-controls="tab-panel-5" role="tab" type="button"
                         tabindex="-1">
-                        Tab #5
+                        Testing
                     </button>
                     <button id="tab-6" aria-selected="false" aria-controls="tab-panel-6" role="tab" type="button"
                         tabindex="-1">
-                        Tab #6
+                        How to Run
                     </button>
                     <button id="tab-7" aria-selected="false" aria-controls="tab-panel-7" role="tab" type="button"
                         tabindex="-1">
-                        Tab #7
+                        Build & Deployment
                     </button>
                 </div>
                 <div class="flow" id="tab-panel-1" aria-labelledby="tab-1" role="tabpanel" tabindex="0">
 
-                    <h2>Tab content #1</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
+                    <div class="tab-content flow">
+                        <h2>Description</h2>
+                        <p>A fully accessible, keyboard-navigable tab interface with responsive layout, built with
+                            semantic HTML, ARIA roles,
+                            and JavaScript.</p>
+                    </div>
 
                 </div>
                 <div class="flow" id="tab-panel-2" aria-labelledby="tab-2" role="tabpanel" tabindex="-1" hidden>
-                    <h2>Tab content #2</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
+                    <div class="tab-content flow">
+                        <h2>JavaScript</h2>
 
+                        <p>Built with <strong>vanilla ES6 JavaScript</strong>, focusing on modern syntax and browser
+                            APIs, , then bundled,
+                            transpiled to ES2015, and minified for broad browser compatibility.</p>
+
+                        <p>The JavaScript has been split into separate modules, improving code modularity:</p>
+
+                        <h3>Main</h3>
+                        <ul>
+                            <li><code>tabs.js</code>: Handles the tabbed interface (selection, panel switching).</li>
+                            <li><code>reset-all-tab-panels.js</code>: Hides all tab panels.</li>
+                            <li><code>reset-all-tabs.js</code>: Deselects all tabs.</li>
+                        </ul>
+
+                        <h3>Helpers</h3>
+                        <ul>
+                            <li><code>set-multiple-attributes.js</code>: Utility function to efficiently assign multiple
+                                attributes to a single
+                                DOM element.</li>
+                        </ul>
+
+                        <h3>Other</h3>
+                        <ul>
+                            <li><code>loader.js</code>: Displays a loader animation until the page is fully rendered,
+                                then removes the loader
+                                and announces readiness for screen readers.</li>
+                            <li><code>theme.js</code>: Handles theme toggling (light/dark mode) and local storage
+                                management.</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="flow" id="tab-panel-3" aria-labelledby="tab-3" role="tabpanel" tabindex="-1" hidden>
-                    <h2>Tab content #3</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
+                    <div class="tab-content flow">
+                        <h2>Accessibility</h2>
+
+                        <p>The site includes the following accessibility enhancements:</p>
+
+                        <ul class="disc">
+                            <li>Fully keyboard-navigable using tab keys and arrow keys.</li>
+                            <li>ARIA roles and attributes are implemented throughout (e.g. for tabs and panels).</li>
+                            <li>A visually hidden skip link is provided for screen reader users.</li>
+                        </ul>
+                    </div>
 
                 </div>
                 <div class="flow" id="tab-panel-4" aria-labelledby="tab-4" role="tabpanel" tabindex="-1" hidden>
-                    <h2>Tab content #4</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
+                    <div class="tab-content flow">
+                        <h2>Theme Toggling</h2>
 
+                        <p>The application includes a dark mode and light mode toggle:</p>
+
+                        <ul class="disc">
+                            <li>The current theme state is stored in <strong>local storage</strong> and applied
+                                automatically on page reload.
+                            </li>
+                            <li>Accessible buttons with appropriate ARIA attributes are used to improve usability.</li>
+                        </ul>
+                    </div>
                 </div>
+
                 <div class="flow" id="tab-panel-5" aria-labelledby="tab-5" role="tabpanel" tabindex="-1" hidden>
-                    <h2>Tab content #5</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
+                    <div class="tab-content flow">
+                        <h2>Testing and Compatibility</h2>
 
+                        <p>The application has been tested on the following platforms and browsers:</p>
+
+                        <ul class="disc">
+                            <li><strong>Operating System</strong>: Windows 10</li>
+                            <li><strong>Browsers</strong>:
+                                <ul>
+                                    <li>Google Chrome</li>
+                                    <li>Mozilla Firefox</li>
+                                    <li>Microsoft Edge</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                        <h3>Device View Testing</h3>
+
+                        <p>The layout and functionality have been verified in both browser and device simulation views
+                            to ensure responsiveness
+                            and usability.</p>
+                    </div>
                 </div>
+
                 <div class="flow" id="tab-panel-6" aria-labelledby="tab-6" role="tabpanel" tabindex="-1" hidden>
-                    <h2>Tab content #6</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-
+                    <div class="tab-content flow">
+                        <h2>How to Run</h2>
+                        <ol>
+                            <li>Clone or download the repository to your local machine.</li>
+                            <li>Open the project folder and start a simple HTTP server (e.g., using
+                                <code>Live Server</code> in VS Code or
+                                Python's <code>http.server</code> module).
+                            </li>
+                            <li>Open the project in a modern browser (e.g., Chrome, Firefox, or Edge).</li>
+                        </ol>
+                    </div>
                 </div>
+
                 <div class="flow" id="tab-panel-7" aria-labelledby="tab-7" role="tabpanel" tabindex="-1" hidden>
-                    <h2>Tab content #7</h2>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas at cumque reiciendis perferendis
-                        deleniti temporibus dolorum sint illum facilis rem minima, quos ex, numquam ratione.</p>
-                    <h3>Subheading</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, voluptatibus neque? Eligendi
-                        illo qui facilis aspernatur omnis beatae laborum. Ipsam.</p>
+                    <div class="tab-content flow">
+                        <h2>Build & Deployment Setup for <code>/docs</code> Folder</h2>
+
+                        <p>If you want to deploy a minified version of this project to <strong>GitHub Pages</strong>,
+                            read on.</p>
+
+                        <h3>1. Install Required Packages</h3>
+
+                        <p>Run this once in your project root to install dev dependencies:</p>
+
+                        <pre><code>npm install</code></pre>
+
+                        <h3>2. Run the full build process</h3>
+
+                        <p>In the terminal, run:</p>
+
+                        <pre><code>npm run build</code></pre>
+
+                        <h3>3. Deploy to GitHub Pages</h3>
+
+                        <p>Once you've created a repository and pushed the files,</p>
+
+                        <ul class="disc">
+                            <li>go to <code>https://github.com/[your-name]/[your-project-name]/settings/pages</code>.
+                            </li>
+                            <li>Under "Build and deployment &gt; Branch" make sure you set the branch to
+                                <code>main</code> and folder to
+                                <code>/docs</code>.
+                            </li>
+                            <li>Click "Save".</li>
+                        </ul>
+
+                        <p><strong>Note</strong><br>
+                            For a detailed description of the build process, configuration files and npm packages
+                            see my <a href="http://" target="_blank" rel="noopener noreferrer"
+                                class="external-link">GitHub
+                                Pages Optimised Build</a>.</p>
+
+
+                    </div>
 
                 </div>
             </div>

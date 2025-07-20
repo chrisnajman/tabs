@@ -29,15 +29,6 @@ The JavaScript has been split into separate modules, improving code modularity:
 
 ---
 
-## Theme Toggling
-
-The application includes a dark mode and light mode toggle:
-
-- The current theme state is stored in **local storage** and applied automatically on page reload.
-- Accessible buttons with appropriate ARIA attributes are used to improve usability.
-
----
-
 ## Accessibility
 
 The site includes the following accessibility enhancements:
@@ -45,6 +36,15 @@ The site includes the following accessibility enhancements:
 - Fully keyboard-navigable using tab keys and arrow keys.
 - ARIA roles and attributes are implemented throughout (e.g. for tabs and panels).
 - A visually hidden skip link is provided for screen reader users.
+
+---
+
+## Theme Toggling
+
+The application includes a dark mode and light mode toggle:
+
+- The current theme state is stored in **local storage** and applied automatically on page reload.
+- Accessible buttons with appropriate ARIA attributes are used to improve usability.
 
 ---
 

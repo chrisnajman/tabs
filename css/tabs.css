@@ -1,6 +1,6 @@
 .tabs {
     margin-inline: auto;
-    max-width: 50rem;
+    max-width: 65.625rem;
 }
 
 div[role="tablist"] {
@@ -8,7 +8,7 @@ div[role="tablist"] {
     flex-wrap: wrap;
     gap: 0.5rem;
     position: relative;
-    @media screen and (width < 40.5rem) {
+    @media screen and (width < 66.875rem) {
         justify-content: center;
         padding-block-end: 0.5em;
     }
@@ -30,7 +30,7 @@ button[role="tab"] {
         color: var(--body-fg);
         pointer-events: none;
 
-        @media screen and (width < 40.5rem) {
+        @media screen and (width < 66.875rem) {
             box-shadow: none;
         }
     }
@@ -40,7 +40,7 @@ button[role="tab"] {
         color: var(--body-fg);
     }
 
-    @media screen and (width < 40.5rem) {
+    @media screen and (width < 66.875rem) {
         border-radius: 0.5rem;
     }
 }
@@ -49,10 +49,36 @@ div[role="tabpanel"] {
     position: relative;
     top: -0.25rem;
     padding: 1.5em;
+    padding-block-end: clamp(1.5em, 0.0935em + 6.5421vw, 5em);
     background-color: var(--el-bg);
 
-    @media screen and (width < 40.5rem) {
+    @media screen and (width < 66.875rem) {
         position: static;
         border-radius: 0.5rem;
+    }
+
+    & .tab-content {
+        max-width: 50rem;
+        margin-inline: auto;
+    }
+
+    & .disc {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        list-style-type: disc;
+        padding-inline-start: 1.5rem;
+
+        & ul {
+            list-style-type: inherit;
+            padding-inline-start: 1.5rem;
+        }
+    }
+
+    & ol {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding-inline-start: 1.5rem;
     }
 }
